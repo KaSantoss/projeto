@@ -1,0 +1,11 @@
+<mat-toolbar class="shadow justify-content-between px-5 mb-4">
+  <div>
+    <span class="mat-h2">ConTrello</span>
+  </div>
+  <div>
+
+    <app-dialog (emitText)="addColumn($event)" question="Adicionar nova Coluna">
+      <button mat-raised-button color="primary">Nova coluna</button>
+    </app-dialog>
+  </div>
+</mat-toolbar>
